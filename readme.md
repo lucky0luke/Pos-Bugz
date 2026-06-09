@@ -3,7 +3,7 @@
 A practical POS Pen Testing Cheat Sheet with test cases. Built from real-world project
 experience with full commitment to Responsible Disclosure.
 
-> The goal is to share the *techniques* and the *thought process* — not anyone's production
+> The goal is to share the *techniques* and the *thought process*  not anyone's production
 > secrets. Shared for educational and defensive purposes only;
 ---
 
@@ -23,12 +23,12 @@ browse, download, and upload files.
 
 ## Reconnaissance: learning the device before attacking it
 
-Before touching the terminal as an attacker, I spent time as a *user* — understanding exactly how
+Before touching the terminal as an attacker, I spent time as a *user*  understanding exactly how
 this device is meant to work. A black-box terminal gives up very little until you know its boot
 sequence, its key combinations, its service modes, and the tooling the vendor uses to manage it. So
 the first real win came from **researching the vendor and the device's own documentation.**
 
-Publicly available setup and driver-installation guides for the Ingenico Move/2500 turned out to be
+Publicly available setup and driver installation guides for the Ingenico Move/2500 turned out to be
 genuinely valuable. They documented things like:
 
 <img width="1003" height="764" alt="image" src="https://github.com/user-attachments/assets/9cd5da12-6921-4b96-8dab-64b5746e43f8" />
@@ -38,7 +38,7 @@ genuinely valuable. They documented things like:
 - How the vendor's **Local Loading Tool (LLT)** connects to and provisions the device.
 
 In other words, the official "how to install and service this terminal" material doubled as a map of
-the exact attack path used below — the same connection workflow a technician uses is the one an
+the exact attack path used below the same connection workflow a technician uses is the one an
 attacker abuses. This is a recurring theme in hardware/embedded testing: **vendor documentation is
 reconnaissance gold.**
 
@@ -49,14 +49,14 @@ reconnaissance gold.**
 ### The flaw
 
 The terminal can be put into a "download mode" (boot + a key combo) and then spoken to over USB with
-the vendor's **Local Loading Tool (LLT)** — the same software legitimately used to provision and
+the vendor's **Local Loading Tool (LLT)**  the same software legitimately used to provision and
 service the device. The problem: in this configuration the tool would **read, modify, and upload
 files with no authentication at all.**
 
 ### What that gave up
 
 - **Read everything:** configuration files, log files, certificates, and assets.
-- **Modify everything:** including the bank/branding logos rendered on the screen — a ready-made
+- **Modify everything:** including the bank/branding logos rendered on the screen a ready-made
   phishing primitive (swap the logo, hand the device to a victim).
 - **Download everything** to the tester's machine for offline analysis.
 
