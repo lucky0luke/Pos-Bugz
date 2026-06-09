@@ -11,10 +11,11 @@
  
 ## Vendors & Findings Index
 
-| # | Vendor       | Device          | Vulnerability                                      | Write-up |
-|---|--------------|-----------------|----------------------------------------------------|----------|
-| 1 | Ingenico     | MOVE/2500       | Unauthenticated Filesystem Access over USB (LLT / Download Mode) | [→ Read](https://github.com/lucky0luke/Pos-Bugz/blob/main/Vendor/Ingenico-MOVE2500/unauthenticated-usb-filesystem-access.md) |
-| 2 | Android POS  | Android         | Intercept Traffic Via SIM                          | [→ Read](https://github.com/lucky0luke/Pos-Bugz/blob/main/Vendor/Android-Pos/traffic-via-sim.md) |
+| # | Vendor       | Device          | Vulnerability                                      | Write-up | Author |
+|---|--------------|-----------------|----------------------------------------------------|----------|----------|
+| 1 | Ingenico     | MOVE/2500       | Unauthenticated Filesystem Access over USB (LLT / Download Mode) | [→ Read](https://github.com/lucky0luke/Pos-Bugz/blob/main/Vendor/Ingenico-MOVE2500/unauthenticated-usb-filesystem-access.md) | Muhammad Matter  |
+| 2 | Android POS  | Android         | Intercept Traffic Via SIM                          | [→ Read](https://github.com/lucky0luke/Pos-Bugz/blob/main/Vendor/Android-Pos/traffic-via-sim.md) | Muhammad Matter  |
+| 3 |  PAX   | D230 device         | Intercepting Everything: A PAX PoS Pentest Case Study                      | [→ Read](https://medium.com/@omarelshopky/intercepting-everything-a-pax-pos-pentest-case-study-442f09cd9c8d) |  Omar Elshopky 
 > More vendors and findings will be added as research is documented.
  
 ---
