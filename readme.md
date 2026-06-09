@@ -2,7 +2,7 @@
 # POS Pen Testing Bugz 
  
 > A practical POS penetration testing cheat sheet with real-world test cases, built from actual
-> project experience — shared under the principles of **Responsible Disclosure**.
+> project experience  shared under the principles of **Responsible Disclosure**.
 >
 > The goal is to share the *techniques* and the *thought process*, not production secrets.
 > Everything here is for **educational and defensive purposes only.**
