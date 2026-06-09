@@ -14,6 +14,7 @@
 | # | Vendor | Device | Vulnerability | Severity | Write-up |
 |---|--------|--------|---------------|----------|----------|
 | 1 | Ingenico | MOVE/2500 | Unauthenticated Filesystem Access over USB (LLT / Download Mode) | 🔴 Critical | [→ Read](https://github.com/lucky0luke/Pos-Bugz/blob/main/Vendor/%20Ingenico-MOVE2500/unauthenticated-usb-filesystem-access.md) |
+ | 2 | Android POS | Android | Intercept Traffic Via Sim | 🔴 Critical | [→ Read](https://github.com/lucky0luke/Pos-Bugz/blob/main/Vendor/Android-Pos/traffic-via-sim.md) |
  
 > More vendors and findings will be added as research is documented.
  
